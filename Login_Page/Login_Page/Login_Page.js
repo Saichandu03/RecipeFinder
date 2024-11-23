@@ -71,12 +71,13 @@ function check(event){
     var userPw = document.getElementById('userPw').value;
     var Invalid_password = document.getElementById('Invalid_password');
 
-    console.log(userPw)
+    console.log(userPw)     
     if(localStorage[userName]!==null && localStorage[userName]===userPw){
         // alert('You are logged in.');
         localStorage.setItem("pass" , userPw)
         localStorage.setItem("user" , userName);
         location.href = "../../HomePage/RecipeFinder/home.html";
+
     }
     else if ((userName === "nryadav" && userPw === "Nryadav@123") ||
                (userName === "saichandu" && userPw === "Saichandu@123") || 
@@ -84,6 +85,8 @@ function check(event){
                (userName === "deepthi" && userPw === "Deepthi@123") ||
                (userName === "chandu" && userPw === "Chandu@123") ||
                (userName === "abhiram" && userPw === "Abhiram@123")){
+                localStorage.setItem("pass" , userPw)
+        localStorage.setItem("user" , userName);
         location.href = "../../HomePage/RecipeFinder/home.html";
     }
     else{

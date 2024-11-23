@@ -21,7 +21,14 @@ const search = () =>{
     location.href = "../../Searchpage/Searchpage/api.html";
 }
 const cart = () =>{
-    location.href = "../../CartPage/CartPage/Cartpage/cartpage.html";
+    var ar = JSON.parse(localStorage.getItem("favourite"));
+    console.log(ar)
+    if(ar == null || ar.length == 0){
+      location.href = "../../CartPage1/CartPage/cartpage.html"
+    }
+    else{
+      location.href = "../../CartPage2/catpage2.html"
+    }
 }
 hover=()=>{
     var cimg = document.getElementsByTagName("img")[1];
