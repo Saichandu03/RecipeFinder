@@ -10,7 +10,7 @@ var category_data={
     "Pizza" : [6 , "https://img.freepik.com/premium-photo/margherita-pizza-with-mozzarella-cheese-bubbling_1194832-19275.jpg?w=996"],
     "Veg Items" : [7 , "https://img.freepik.com/free-photo/high-angle-delicious-pakistan-dish-assortment_23-2148821527.jpg?t=st=1722056396~exp=1722059996~hmac=3de8c6d0b58a4000812b7dea90ffc11f1dd1d63299a6b672cf6f25cc224775ca&w=996" ],
     "Salads" : [8 , "https://img.freepik.com/free-photo/side-view-salad-herring-fur-coat-with-tomatoes-radishes_140725-13979.jpg?t=st=1722057296~exp=1722060896~hmac=2f6b9c5b5299de15a1948468f63ffe54848422cb7216b3b055bd4e5acbcbc208&w=740"],
-    "Pickles" : [9 , "https://athithigruhafoods.in/wp-content/uploads/2018/09/Garlic-Pickle.jpg"],
+    "Pickles" : [9 , "https://www.farmdidi.com/cdn/shop/articles/Blog-post-revised.webp?v=1670659916"],
     "HomeMakes" : [10 , "https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" ],
     "Tiffins" : [11 , "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIaNjL9IM8PgmxHk-F14IjTyB-yZyDPSJF0wkXtQ5k09IgZsFUBFL-VlMgmb4EyMvnKxY&usqp=CAU" ]
   }
@@ -143,7 +143,7 @@ var item_data = [
         region : "Rajasthan",
       },
       {
-        src: "https://i0.wp.com/zulekhaskitchen.com/wp-content/uploads/2014/03/EzyWatermark1812050353121212.png?resize=750%2C500&ssl=1",
+        src: "https://img-global.cpcdn.com/recipes/f36309169695a643/640x640sq70/photo.webp",
         stars:3,
         name : "Bheja Fry",
         region :"Hyderabad",
@@ -281,12 +281,6 @@ var item_data = [
         src: "https://hips.hearstapps.com/hmg-prod/images/del039924-thai-sweet-chili-turkey-burger-web-002-bjg-hi-res-index-65faf87f04888.jpg?crop=0.335xw:1.00xh;0.643xw,0&resize=980:*",
         stars:5,
         name : "Chili Turkey Burger",
-        region:"Kakinada"
-      },
-      {
-        src: "https://www.tasteofhome.com/wp-content/uploads/2021/01/soan-papdi-indian-dessert.jpg?fit=700,700",
-        stars:5,
-        name : "Soan Papdi",
         region:"Kakinada"
       },
  
@@ -470,13 +464,13 @@ var item_data = [
           region : "Andhra Pradesh"
           },
           {
-            src:"https://athithigruhafoods.in/wp-content/uploads/2018/09/Akula-Gongura-Pickle.jpg",
+            src:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu_UPLLr5oNZGfSh7c2LBmXcmWfUxkEcIwJo0-h_wPog&s",
             stars:5,
             name: "Gongura Pickle",
             region : "Telangana"
             },
             {
-              src:"https://athithigruhafoods.in/wp-content/uploads/2018/09/Garlic-Pickle.jpg",
+              src:"https://static.toiimg.com/thumb/58413147.cms?imgsize=472610&width=509&height=340",
               stars:4,
               name: "Garlic Pickle",
               region : "Rajasthan"
@@ -1049,7 +1043,8 @@ document.getElementById('recipeForm').addEventListener('submit', function(event)
   }
 
   if (valid) {
-    // console.log("eneted")
+    console.log("eneted")
+    console.log("Image --> " , imageURL)
       const recipe = {
           name: name,
           imageURL: imageURL,

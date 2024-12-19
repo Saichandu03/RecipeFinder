@@ -14,7 +14,7 @@ if (window.matchMedia("(max-width: 750px)").matches){
 }
 
 const logout = () =>{
-    location.href = "../../Login_Page/Login_Page/Login_page.html"
+    location.href = "/index.html"
 }
 
 const search = () =>{

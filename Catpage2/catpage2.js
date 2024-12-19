@@ -1,9 +1,9 @@
 
-Object.entries(localStorage).map((ele)=>{
-  for (var i of ele){
-    state = i.split(',')
-    if(state.length >= 3){
-    }}})
+// Object.entries(localStorage).map((ele)=>{
+//   for (var i of ele){
+//     state = i.split(',')
+//     if(state.length >= 3){
+//     }}})
 const removee = (ind) =>{
   var key =""
     for( let i of ind){
@@ -31,11 +31,14 @@ const fun = () =>{
   // const count = document.getElementById("card_container").chindren;
   // alert(count)
   Object.entries(localStorage).map((ele)=>{
+    
     user = 0
     for (var i of ele){
       state = i.split(',')
-      if(state.length >= 3){
+      if(state.length >= 3 && ele[0] != "newItem"){
         // console.log(st[1])
+        console.log("This is Connn...")
+        console.log(ele ,"----->" ,  state)
             var star = document.createElement("div");
             var n = parseInt(state[1])
             // console.log(typeof n)
