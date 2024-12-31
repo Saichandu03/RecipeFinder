@@ -79,6 +79,19 @@ cir.addEventListener("mouseleave",nonhover);
 
 email=()=>{
     setTimeout(() => {
-        location = 'mailto:cserajeswaryadav@gmail.com';
-    }, 1000);
+        location = 'mailto:saichanduadapa951@gmail.com';
+    }, 500);
 }
+
+linkedIn=()=>{
+    setTimeout(() => {
+        location = 'https://www.linkedin.com/in/saichandu-adapa-143b41254/';
+    }, 500);
+}
+
+insta=()=>{
+    setTimeout(() => {
+        location = 'https://www.instagram.com/saichandu_adapa/';
+    }, 500);
+}
+
