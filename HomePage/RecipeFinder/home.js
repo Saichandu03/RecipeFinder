@@ -21,13 +21,11 @@ const search = () =>{
     location.href = "../../Searchpage/Searchpage/api.html";
 }
 const cart = () =>{
-    var ar = JSON.parse(localStorage.getItem("favourite"));
-    console.log(ar)
-    if(ar == null || ar.length == 0){
+    if(localStorage.length <=  2){
       location.href = "../../CartPage1/CartPage/cartpage.html"
     }
     else{
-      location.href = "../../CartPage2/catpage2.html"
+      location.href = "../../Catpage2/catpage2.html"
     }
 }
 hover=()=>{
